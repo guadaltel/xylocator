@@ -20,7 +20,7 @@
   "files": {
     "ol": {
       "scripts": "xylocator.ol.min.js",
-      "styles": "xylocator.min.css"
+      "styles": "xylocator.ol.min.css"
     }
   },
   "metadata": {
