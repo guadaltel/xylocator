@@ -1,0 +1,37 @@
+{
+  "url": {
+    "name": "xylocator",
+    "separator": "*"
+  },
+  "constructor": "M.plugin.XYLocator",
+  "parameters": [{
+    "type": "object",
+    "properties": [{
+      "type": "enum",
+      "name": "position",
+      "possibleValues": ["TR", "TL", "BL", "BR"],
+      "position": 0
+    }, {
+      "type": "object array",
+      "name": "projections",
+      "position": 1
+    }]
+  }],
+  "files": {
+    "ol": {
+      "scripts": [],
+      "styles": []
+    }
+  },
+  "metadata": {
+    "name": "XYLocator",
+    "description": "Locates given coordinates on map",
+    "text": "Locates given coordinates on map",
+    "version": "1.0.0",
+    "date": "",
+    "author": "",
+    "org": "",
+    "tags": "mapea,plugin",
+    "icon": "./facade/assets/icons/icons.svg"
+  }
+}
