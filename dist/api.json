@@ -25,12 +25,12 @@
   },
   "metadata": {
     "name": "XYLocator",
-    "description": "Locates given coordinates on map",
-    "text": "Locates given coordinates on map",
+    "description": "Localizador de coordenadas",
+    "text": "Te permite localizar una coordenadas especificas en el mapa",
     "version": "1.0.0",
-    "date": "",
+    "date": "Jun 26, 2019",
     "author": "",
-    "org": "",
+    "org": "Instituto de Estadística y Cartografía",
     "tags": "mapea,plugin",
     "icon": "./facade/assets/icons/icons.svg"
   }
