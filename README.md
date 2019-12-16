@@ -17,22 +17,7 @@ Plugin que permite localizar las coordenas introducidas por el usuario en un Sis
 
 ## Parámetros
 
-- El constructor se inicializa con un JSON de options con los siguientes atributos:
-
-- **projections**. Proyecciones de origen que se mostrarán para seleccionar las coordenadas a localizar.
-** Por defecto los valores posibles son:
-
-```javascript
-[
-    { title: 'ETRS89 (4258)', code: 'EPSG:4258', units: 'd' },
-    { title: 'WGS84 (4326)', code: 'EPSG:4326', units: 'd' },
-    { title: 'WGS84 (3857)', code: 'EPSG:3857', units: 'm' },
-    { title: 'ETRS89/UTM zone 31N (25831)', code: 'EPSG:25831', units: 'm' },
-    { title: 'ETRS89/UTM zone 30N (25830)', code: 'EPSG:25830', units: 'm' },
-    { title: 'ETRS89/UTM zone 29N (25829)', code: 'EPSG:25829', units: 'm' },
-    { title: 'ETRS89/UTM zone 28N (25828)', code: 'EPSG:25828', units: 'm' },
-]
-```
+- El constructor se inicializa con un JSON de options con el siguiente atributo:
 
 - **position**. Indica la posición donde se mostrará el plugin
   - 'TL':top left (default)
@@ -55,7 +40,6 @@ mp.on('xylocator:locationCentered', (data) => {
 
 ## Otros métodos
 
-
 ## Ejemplos de uso
 
 ### Ejemplo 1
@@ -76,13 +60,7 @@ mp.on('xylocator:locationCentered', (data) => {
     container: 'map'
   });
 
-  const mp = new M.plugin.XYLocator({
-    projections: [
-      { title: 'WGS84 (4326)', code: 'EPSG:4326', units: 'd' },
-      { title: 'ETRS89/UTM zone 31N (25831)', code: 'EPSG:25831', units: 'm' },
-    ],
-    position: 'TL',
-  });
+  const mp = new M.plugin.XYLocator();
 
   map.addPlugin(mp);
 ```
