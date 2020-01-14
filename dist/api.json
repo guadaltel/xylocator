@@ -15,8 +15,8 @@
   }],
   "files": {
     "ol": {
-      "scripts": "xylocator.ol.min.js",
-      "styles": "xylocator.ol.min.css"
+      "scripts": ["xylocator.ol.min.js"],
+      "styles": ["xylocator.ol.min.css"]
     }
   },
   "metadata": {
