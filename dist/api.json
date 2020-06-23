@@ -7,10 +7,13 @@
   "parameters": [{
     "type": "object",
     "properties": [{
-      "type": "enum",
+      "type": "simple",
       "name": "position",
-      "possibleValues": ["TR", "TL", "BL", "BR"],
       "position": 0
+    },{
+      "type": "simple",
+      "name": "zoom",
+      "position": 1
     }]
   }],
   "files": {
@@ -21,14 +24,13 @@
   },
   "metadata": {
     "name": "XYLocator",
-    "description": "Localizador de coordenadas",
-    "text": "Te permite localizar una coordenadas especificas en el mapa",
-    "version": "1.1.0",
-    "date": "Diciembre, 2019",
+    "description": "Locates given coordinates on map",
+    "text": "Locates given coordinates on map",
+    "version": "1.0.0",
+    "date": "Junio, 2020",
     "author": "",
-    "org": "Instituto de Estadística y Cartografía. Junta de Andalucía",
+    "org": "Consejería de Hacienda, Industria y Energía. Junta de Andalucía.",
     "tags": "mapea,plugin",
-    "icon": "./facade/assets/icons/icons.svg",
-    "centralized": true
+    "icon": "./facade/assets/icons/icons.svg"
   }
 }

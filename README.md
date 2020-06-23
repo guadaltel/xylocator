@@ -1,10 +1,12 @@
 # M.plugin.XYLocator
 
-Plugin que permite localizar las coordenas introducidas por el usuario en un Sistema de referencia determinado. Las coordenadas son transformadas al sistema de referencia del mapa en ese momento.
 
-![Imagen1](./img/xyLocator_1.png)
+Plugin que permite localizar las coordenas introducidas por el usuario en un Sistema de referencia determinado.
+Las coordenadas son transformadas a proyección que tenga el mapa en ese momento.
 
-## Dependencias
+![Imagen1](./img/xylocator1.png)
+
+# Dependencias
 
 - xylocator.ol.min.js
 - xylocator.ol.min.css
@@ -15,9 +17,9 @@ Plugin que permite localizar las coordenas introducidas por el usuario en un Sis
  <script type="text/javascript" src="../../plugins/xylocator/xylocator.ol.min.js"></script>
 ```
 
-## Parámetros
+# Parámetros
 
-- El constructor se inicializa con un JSON de options con el siguiente atributo:
+El constructor se inicializa con un JSON de options con los siguientes atributos:
 
 - **position**. Indica la posición donde se mostrará el plugin
   - 'TL':top left (default)
@@ -25,7 +27,9 @@ Plugin que permite localizar las coordenas introducidas por el usuario en un Sis
   - 'BL':bottom left
   - 'BR':bottom right
 
-## Eventos
+- **zoom**. Indica el zoom que se hará cuando localice la coordenada, por defecto 16.
+
+# Eventos
 
 - **xylocator:locationCentered**
   - Evento que se dispara cuando se ha localizado la búsqueda del plugin sobre el mapa.
@@ -38,29 +42,28 @@ mp.on('xylocator:locationCentered', (data) => {
 });
 ```
 
-## Otros métodos
+# Otros métodos
 
-## Ejemplos de uso
 
-### Ejemplo 1
+# Ejemplos de uso
+
 ```javascript
-  const map = M.map({
-    container: 'map'
-  });
+   const map = M.map({
+     container: 'map'
+   });
 
-  const mp = new M.plugin.XYLocator({
-    position: 'TL',
-  });
+   const mp = new M.plugin.XYLocator({
+        postition: 'TL',
+      });
 
-  map.addPlugin(mp);
+   map.addPlugin(mp);
 ```
-### Ejemplo 2
+
 ```javascript
-  const map = M.map({
-    container: 'map'
-  });
+const mp = new XYLocator({
+  position: 'TL',
+  zoom: 16
+});
 
-  const mp = new M.plugin.XYLocator();
-
-  map.addPlugin(mp);
+map.addPlugin(mp);
 ```
